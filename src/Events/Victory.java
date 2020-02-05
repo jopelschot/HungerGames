@@ -11,7 +11,7 @@ public class Victory {
         System.out.println("The Hunger Games have come to an end.");
         System.out.println(winner.getName() + " is the last contestant standing and will be crowned this year's winner!");
         System.out.println();
-        if (RNG.getChance() < 0.8 && winner.getHealth() >= winner.getMaxHealth() * 0.5) {
+        if (RNG.getChance() < 0.2 && winner.getHealth() >= winner.getMaxHealth() * 0.5) {
             System.out.println("But then President Snow kills " + winner.getName() + "...  THE END.");
             winner.setAlive(false);
         } else {
